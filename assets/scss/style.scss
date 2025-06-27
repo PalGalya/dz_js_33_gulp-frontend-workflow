@@ -1,0 +1,126 @@
+@use 'sass:color';
+
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$text-color: #333;
+$background-color: #f8f9fa;
+$feature-bg: #fff;
+$header-height: 80px;
+$footer-height: 60px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  height: $header-height;
+  @include flex-center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  section {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      color: $primary-color;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: color.adjust($text-color, $lightness: 20%);
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+
+  .feature {
+    background-color: $feature-bg;
+    padding: 2rem;
+    border-radius: 10px;
+    @include card-shadow;
+
+    h3 {
+      color: $secondary-color;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 1rem;
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: white;
+  height: $footer-height;
+  @include flex-center;
+  margin-top: auto;
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main section h2 {
+    font-size: 1.75rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

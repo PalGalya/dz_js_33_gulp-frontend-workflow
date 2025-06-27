@@ -1,0 +1,40 @@
+{
+  "name": "dz_js16",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/PalGalya/dz_js16#readme",
+  "bugs": {
+    "url": "https://github.com/PalGalya/dz_js16/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PalGalya/dz_js16.git"
+  },
+  "license": "ISC",
+  "author": "Halyna Palamarchuk",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp watch",
+    "build": "gulp scss"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^7.0.7",
+    "gulp": "^4.0.2",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.1.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2",
+    "sort-css-media-queries": "1.5.4"
+  }
+}
