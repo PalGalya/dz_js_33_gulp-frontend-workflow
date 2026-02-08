@@ -1,15 +1,15 @@
 {
-  "name": "dz_js16",
+  "name": "dz_js_33_gulp-frontend-workflow",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/PalGalya/dz_js16#readme",
+  "homepage": "https://github.com/PalGalya/dz_js_33_gulp-frontend-workflow#readme",
   "bugs": {
-    "url": "https://github.com/PalGalya/dz_js16/issues"
+    "url": "https://github.com/PalGalya/dz_js_33_gulp-frontend-workflow/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PalGalya/dz_js16.git"
+    "url": "git+https://github.com/PalGalya/dz_js_33_gulp-frontend-workflow.git"
   },
   "license": "ISC",
   "author": "Halyna Palamarchuk",
